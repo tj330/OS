@@ -7,7 +7,6 @@
 #define SIZE 5
 
 sem_t forks[SIZE];
-sem_t mutex;
 
 void* philosopher(void* num) {
     int id = *(int*)num;
