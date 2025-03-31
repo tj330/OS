@@ -26,7 +26,6 @@ void preemptivePriority(struct Process p[], int n) {
             continue;
         }
 
-        // Save Gantt chart info
         if (ganttSize == 0 || gantt[ganttSize - 1] != p[minIndex].pid) {
             gantt[ganttSize] = p[minIndex].pid;
             ganttTime[ganttSize] = time;
