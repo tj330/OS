@@ -43,7 +43,6 @@ void preemptivePriority(struct Process p[], int n) {
         }
     }
 
-    // Print Process Table
     printf("\nPID\tAT\tBT\tPR\tCT\tTAT\tWT\n");
     float totalTAT = 0, totalWT = 0;
     for (int i = 0; i < n; i++) {
@@ -55,7 +54,6 @@ void preemptivePriority(struct Process p[], int n) {
     printf("\nAvg TAT: %.2f\n", totalTAT / n);
     printf("Avg WT: %.2f\n", totalWT / n);
 
-    // Print Gantt Chart
     printf("\nGantt Chart:\n ");
     for (int i = 0; i < ganttSize; i++) {
         printf("| P%d ", gantt[i]);
